@@ -11,10 +11,37 @@ The **Oxford-IIIT Pet dataset** includes images of 37 breeds of cats and dogs al
 ## Dataset Structure
 ```bash
 data/
-├── images/
-│ ├── Abyssinian_1.jpg
-│ └── ...
-└── annotations/
-├── Abyssinian_1.png
-└── ...
+└── oxford-iiit-pet/
+    ├── images/
+    │   ├── Abyssinian_1.jpg
+    │   ├── Abyssinian_2.jpg
+    │   ├── Birman_123.jpg
+    │   ├── ... 
+    │   └── yorkshire_terrier_200.jpg
+    │
+    └── annotations/
+        ├── trimaps/
+        │   ├── Abyssinian_1.png
+        │   ├── Abyssinian_2.png
+        │   ├── Birman_123.png
+        │   ├── ...
+        │   └── yorkshire_terrier_200.png
+        │
+        ├── xmls/
+        │   ├── Abyssinian_1.xml
+        │   ├── Abyssinian_2.xml
+        │   ├── Birman_123.xml
+        │   ├── ...
+        │   └── yorkshire_terrier_200.xml
+        │
+        ├── trainval.txt
+        ├── test.txt
+        └── README
+```
+
+
+## Setup
+Install required packages:
+```bash
+pip install torch torchvision numpy opencv-python pillow tqdm scikit-learn matplotlib
 ```
